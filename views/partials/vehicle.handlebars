@@ -1,0 +1,17 @@
+<div class="vehicle">
+  {{#each this}}
+<h2>{{model}}</h2>
+<div class="container">
+<div class="card">
+  <img class="card-img-top" src="#" alt="vehicleimage"></div>
+  <div class="card-body"> <h4>Product Title:{{model}} </h4>
+<p>Color: {{color}}</p>
+<p>Year :{{year}}</p>
+<p>License plate:{{license_plate}}</p>
+<p>Restration Due:{{registration_expiration}}</p>
+<p>Insurance Due:{{insurance_expiration}}</p>
+<p>Price :{{price}}</p>
+<p>Contact:{{user.username}}</p>
+<p>Email:{{user.email}}</p>
+</div>
+</div>
