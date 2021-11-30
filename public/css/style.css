@@ -68,6 +68,11 @@ li {
   border: solid 2px #26292e;
 }
 
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
 .navbar nav {
   display: flex;
   justify-content: space-between;
@@ -253,7 +258,6 @@ li {
 
 .card-ribbon p {
   font-style: bold;
-  
 }
 
 .card-img {
