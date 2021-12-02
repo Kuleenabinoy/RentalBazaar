@@ -11,14 +11,10 @@ const loginFormHandler = async (event) => {
       headers: { "Content-Type": "application/json" },
     });
 
-    if (response.ok && isadmin === true) {
-      document.location.replace("/admindashboard");
-    } else if (response.ok) {
-      document.location.replace("/home");
+    if (response.ok) {
+      document.location.replace("/");
     } else {
-      alert(
-        "Failed to log in. Please check your username and password and try again"
-      );
+      alert("Failed to log in.");
     }
   }
 };
@@ -38,7 +34,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace("/home");
+      document.location.replace("/");
     } else {
       alert("Failed to sign up.");
     }
