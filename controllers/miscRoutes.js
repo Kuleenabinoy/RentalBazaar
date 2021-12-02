@@ -17,7 +17,7 @@ router.get("/", withAuth, async (req, res) => {
 
         const misc = miscData.map((misc) => misc.get({ plain: true }));
 
-        res.render("miscspage", {
+        res.render("productpage", {
             misc,
             logged_in: req.session.logged_in,
         });

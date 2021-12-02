@@ -17,7 +17,7 @@ router.get("/", withAuth, async (req, res) => {
 
         const property = propertyData.map((property) => property.get({ plain: true }));
 
-        res.render("propertypage", {
+        res.render("productpage", {
             property,
             logged_in: req.session.logged_in,
         });
