@@ -7,8 +7,10 @@ router.get("/", withAuth, async (req, res) => {
     try {
         const userData = await User.findAll({
             attributes: { exclude: ["password"] },
-            order: [["name", "ASC"]],
+            order: [["username", "ASC"]],
         });
+
+        console.log('hit......');
 
         const users = userData.map((project) => project.get({ plain: true }));
 
