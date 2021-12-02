@@ -4,7 +4,7 @@ const { Vehicle, User } = require("../models");
 const withAuth = require("../utils/auth");
 
 // GET all
-router.get("/vehicle", withAuth, async (req, res) => {
+router.get("/", withAuth, async (req, res) => {
     try {
         const vehicleData = await Vehicle.findAll({
             include: [
@@ -28,7 +28,7 @@ router.get("/vehicle", withAuth, async (req, res) => {
 });
 
 // Use the custom middleware before allowing the user to access the vehicle
-router.get("/vehicle/:id", withAuth, async (req, res) => {
+router.get("/:id", withAuth, async (req, res) => {
     try {
         const vehicleData = await Vehicle.findByPk(req.params.id, {
             include: [

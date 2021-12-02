@@ -8,8 +8,8 @@ const vehicleRoutes = require("./vehicle-routes");
 
 router.use("/users", userRoutes);
 router.use("/electronics", electronicsRoutes);
-//router.use("/furniture", furnitureRoutes);
-//router.use("/misc", miscRoutes);
+router.use("/furniture", furnitureRoutes);
+router.use("/misc", miscRoutes);
 router.use("/vehicle", vehicleRoutes);
 
 module.exports = router;
