@@ -4,7 +4,11 @@ const { Categories, User } = require("../models");
 const withAuth = require("../utils/auth");
 
 // GET all
+
+router.get("/categories", withAuth, async (req, res) => {
+
 router.get("/", withAuth, async (req, res) => {
+
     try {
         const categoriesData = await Categories.findAll({
             include: [
@@ -28,7 +32,10 @@ router.get("/", withAuth, async (req, res) => {
 });
 
 // Use the custom middleware before allowing the user to access the electrnics
+router.get("/categories/:id", withAuth, async (req, res) => {
+
 router.get("/:id", withAuth, async (req, res) => {
+
     try {
         const categoriesData = await Categories.findByPk(req.params.id, {
             include: [
@@ -48,3 +55,6 @@ router.get("/:id", withAuth, async (req, res) => {
 });
 
 module.exports = router;
+
+module.exports = router;
+
