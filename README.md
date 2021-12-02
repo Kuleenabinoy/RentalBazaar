@@ -1,4 +1,3 @@
-# Unit-15-Group-Project-2
 # Rental Bazaar
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 
@@ -6,7 +5,7 @@
 ## Description
 The purpose of this assignment was to create a command-line interface for non-developers that easily allows them to view & interact with stored information in a company database.
 
-Technologies used: JavaScript, MYSQL2, console.table
+Technologies used: Handlebars, JavaScript, MYSQL2
 
 View the deployed application here: <placeholder>
 
@@ -34,13 +33,18 @@ First fork & clone the repository to your local environment.
 In order to install any necessary dependancies, open the console & run the following:
 ```
 npm install
+mysql -u root -p
+  - login & check the database is in use
+node seeds/index.js
 ```
 
 ## Installation tips
 If the project folder does not have a package.json or package-lock.json file, please install.
 
 ## Usage
-```node server.js```
+```
+node server.js
+```
 
 ## License
 This project is licened under:
