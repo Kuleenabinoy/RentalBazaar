@@ -17,3 +17,4 @@ router.use('/misc', miscRoutes);
 router.use('/furniture', furnitureRoutes)
 
 module.exports = router;
+

@@ -10,15 +10,17 @@ const loginFormHandler = async (event) => {
       body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },
     });
+
+    if (response.ok) {
+
   console.log('Reposne: ', response);
     if (response.ok) {
       document.location.replace("/s");
     } else if (response.ok) {
+
       document.location.replace("/");
     } else {
-      alert(
-        "Failed to log in. Please check your username and password and try again"
-      );
+      alert("Failed to log in.");
     }
   }
 };
