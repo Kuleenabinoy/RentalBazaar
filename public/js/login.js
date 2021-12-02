@@ -10,11 +10,11 @@ const loginFormHandler = async (event) => {
       body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },
     });
-
-    if (response.ok && isadmin === true) {
-      document.location.replace("/admindashboard");
+  console.log('Reposne: ', response);
+    if (response.ok) {
+      document.location.replace("/s");
     } else if (response.ok) {
-      document.location.replace("/home");
+      document.location.replace("/");
     } else {
       alert(
         "Failed to log in. Please check your username and password and try again"
@@ -38,7 +38,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace("/home");
+      document.location.replace("/");
     } else {
       alert("Failed to sign up.");
     }
