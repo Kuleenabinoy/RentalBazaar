@@ -14,6 +14,8 @@
     <h1>Rental Bazaar</h1>
   </header>
   <nav>
+    {{{navbar}}}
+
     <a href="/">Home</a>
     {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
@@ -28,7 +30,9 @@
     <div class="gallery">
       {{{body}}}
     </div>
+    
   </main>
+  {{{footer}}}
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}

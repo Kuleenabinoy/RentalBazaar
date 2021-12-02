@@ -4,7 +4,7 @@ const { Vehicle, User } = require("../models");
 const withAuth = require("../utils/auth");
 
 // GET all
-router.get("/vehicle", withAuth, async (req, res) => {
+router.get("/vehicle", async (req, res) => {
     try {
         const vehicleData = await Vehicle.findAll({
             include: [
