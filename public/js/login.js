@@ -12,6 +12,12 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
+
+  console.log('Reposne: ', response);
+    if (response.ok) {
+      document.location.replace("/s");
+    } else if (response.ok) {
+
       document.location.replace("/");
     } else {
       alert("Failed to log in.");

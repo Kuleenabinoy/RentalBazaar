@@ -1,12 +1,12 @@
 const router = require("express").Router();
-const { Vehicle, User } = require("../models");
+const { Property, User } = require("../models");
 // Import the custom middleware
 const withAuth = require("../utils/auth");
 
 // GET all
-router.get("/", async (req, res) => {
+router.get("/", withAuth, async (req, res) => {
     try {
-        const vehicleData = await Vehicle.findAll({
+        const propertyData = await Property.findAll({
             include: [
                 {
                     model: User,
@@ -15,10 +15,10 @@ router.get("/", async (req, res) => {
             ],
         });
 
-        const vehicles = vehicleData.map((vehicle) => vehicle.get({ plain: true }));
+        const property = propertyData.map((property) => property.get({ plain: true }));
 
-        res.render("vehiclepage", {
-            vehicles,
+        res.render("productpage", {
+            property,
             logged_in: req.session.logged_in,
         });
     } catch (err) {
@@ -27,10 +27,10 @@ router.get("/", async (req, res) => {
     }
 });
 
-// Use the custom middleware before allowing the user to access the vehicle
-router.get("/:id", withAuth, async (req, res) => {
+// Use the custom middleware before allowing the user to access the electrnics
+router.get("/property/:id", withAuth, async (req, res) => {
     try {
-        const vehicleData = await Vehicle.findByPk(req.params.id, {
+        const propertyData = await Property.findByPk(req.params.id, {
             include: [
                 {
                     model: User,
@@ -39,8 +39,8 @@ router.get("/:id", withAuth, async (req, res) => {
             ],
         });
 
-        const vehicles = vehicleData.get({ plain: true });
-        res.render("vehiclepage", { vehicles, logged_in: req.session.logged_in });
+        const property = propertyData.get({ plain: true });
+        res.render("property-singleitem", { property, logged_in: req.session.logged_in });
     } catch (err) {
         console.log(err);
         res.status(500).json(err);

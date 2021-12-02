@@ -32,9 +32,37 @@
       </div>
   
     </main>
+
+<body>
+  <header>
+    <h1>Rental Bazaar</h1>
+  </header>
+  <nav>
+    {{{navbar}}}
+
+    <a href="/">Home</a>
+
     {{#if loggedIn}}
       <script src="/js/logout.js"></script>
     {{/if}}
+
   </body>
+
+  </nav>
+  <main>
+    <aside>
+      <h2>Enjoy the galleries!</h2>
+    </aside>
+    <div class="gallery">
+      {{{body}}}
+    </div>
+    
+  </main>
+  {{{footer}}}
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
 
 </html>

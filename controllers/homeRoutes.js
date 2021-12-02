@@ -4,6 +4,7 @@ const withAuth = require("../utils/auth");
 
 // Prevent non logged in users from viewing the homepage
 router.get("/", withAuth, async (req, res) => {
+
   try {
     const userData = await User.findAll({
       attributes: { exclude: ["password"] },
@@ -11,6 +12,16 @@ router.get("/", withAuth, async (req, res) => {
     });
 
     const users = userData.map((project) => project.get({ plain: true }));
+
+    try {
+        const userData = await User.findAll({
+            attributes: { exclude: ["password"] },
+            order: [["username", "ASC"]],
+        });
+
+        console.log('hit......');
+
+        const users = userData.map((project) => project.get({ plain: true }));
 
     res.render("homepage", {
       users,
@@ -35,5 +46,6 @@ router.get("/login", (req, res) => {
 router.get("/admin-dashboard", function (req, res, next) {
   res.render("admin-dashboard", { isAdmin: true });
 });
+
 
 module.exports = router;
