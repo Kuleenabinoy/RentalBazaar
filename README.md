@@ -3,7 +3,7 @@
 
 
 ## Description
-The purpose of this assignment was to create a command-line interface for non-developers that easily allows them to view & interact with stored information in a company database.
+<enter description here>
 
 Technologies used: Handlebars, JavaScript, MYSQL2
 
