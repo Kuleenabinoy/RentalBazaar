@@ -4,11 +4,7 @@ const { Property, User } = require("../models");
 const withAuth = require("../utils/auth");
 
 // GET all
-
 router.get("/property", withAuth, async (req, res) => {
-
-router.get("/", withAuth, async (req, res) => {
-
     try {
         const propertyData = await Property.findAll({
             include: [
@@ -21,11 +17,7 @@ router.get("/", withAuth, async (req, res) => {
 
         const property = propertyData.map((property) => property.get({ plain: true }));
 
-
         res.render("propertypage", {
-
-        res.render("productpage", {
-
             property,
             logged_in: req.session.logged_in,
         });
@@ -55,8 +47,4 @@ router.get("/property/:id", withAuth, async (req, res) => {
     }
 });
 
-
 module.exports = router;
-
-module.exports = router;
-
