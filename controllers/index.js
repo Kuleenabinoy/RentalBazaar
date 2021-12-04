@@ -7,6 +7,7 @@ const propertyRoutes = require("./propertyRoutes");
 const miscRoutes = require("./homeRoutes");
 const furnitureRoutes = require("./furnitureRoutes");
 const categoriesRoutes = require("./categoriesRoutes");
+const electronicsRoutes = require("./electronicsRoutes");
 
 router.use("/", homeRoutes);
 router.use("/vehicle", vehicleRoutes);
