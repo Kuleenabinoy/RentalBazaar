@@ -21,7 +21,7 @@ Furniture.init(
             },
         },
         price: {
-            type: DataTypes.DECIMAL(8, 2),
+            type: DataTypes.INTEGER,
             allowNull: false,
         },
         image_url: {

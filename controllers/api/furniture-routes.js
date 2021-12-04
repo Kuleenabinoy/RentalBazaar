@@ -5,7 +5,11 @@ const withAuth = require("../../utils/auth");
 router.post("/", withAuth, async (req, res) => {
     const body = req.body;
     try {
-        const newFurniture = await Furniture.create({ ...body, userId: req.session.userId });
+        const newFurniture = await Furniture.create({
+            ...body,
+            userId: req.session.userId,
+        });
+
         res.json(newFurniture);
     } catch (err) {
         console.log("FAILED! PLEASE TRY AGAIN", err);
