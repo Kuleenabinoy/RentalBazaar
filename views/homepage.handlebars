@@ -10,9 +10,20 @@
 
 <body>
 {{> navbar }}
-{{!-- {{> product }} --}}
+
+{{> productCarousel }}
+
+<section class="product-card-row">
+    {{> product }}
+</section>
+
 {{> aboutcarousel }}
-{{!-- {{> vehicle }} --}}
+
+<section class="product-card-row">
+    {{> vehicle }}
+</section>
+
+
 {{> footer}}
 </body>
 
