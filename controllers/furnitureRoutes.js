@@ -4,7 +4,7 @@ const { Furniture, User } = require("../models");
 const withAuth = require("../utils/auth");
 
 // GET all
-router.get("/", withAuth, async (req, res) => {
+router.get("/furniture", withAuth, async (req, res) => {
     try {
         const furnitureData = await Furniture.findAll({
             include: [
@@ -15,10 +15,10 @@ router.get("/", withAuth, async (req, res) => {
             ],
         });
 
-        const furnitures = furnitureData.map((furniture) => furniture.get({ plain: true }));
+        const furniture = furnitureData.map((furniture) => furniture.get({ plain: true }));
 
-        res.render("productspage", {
-            furnitures,
+        res.render("furniturepage", {
+            furniture,
             logged_in: req.session.logged_in,
         });
     } catch (err) {
@@ -28,7 +28,7 @@ router.get("/", withAuth, async (req, res) => {
 });
 
 // Use the custom middleware before allowing the user to access the furniture
-router.get("/:id", withAuth, async (req, res) => {
+router.get("/furniture/:id", withAuth, async (req, res) => {
     try {
         const furnitureData = await Furniture.findByPk(req.params.id, {
             include: [
@@ -39,8 +39,8 @@ router.get("/:id", withAuth, async (req, res) => {
             ],
         });
 
-        const furnitures = furnitureData.get({ plain: true });
-        res.render("furniture-singleitem", { furnitures, logged_in: req.session.logged_in });
+        const furniture = furnitureData.get({ plain: true });
+        res.render("furniture-singleitem", { furniture, logged_in: req.session.logged_in });
     } catch (err) {
         console.log(err);
         res.status(500).json(err);

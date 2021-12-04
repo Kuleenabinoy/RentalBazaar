@@ -1,13 +1,12 @@
 const router = require("express").Router();
 
-const { Vehicle } = require("../../models");
+const { Properties } = require("../../models");
 const withAuth = require("../../utils/auth");
-
 router.post("/", withAuth, async (req, res) => {
     const body = req.body;
     try {
-        const newVehicle = await Vehicle.create({ ...body, userId: req.session.userId });
-        res.json(newVehicle);
+        const newProperties = await Properties.create({ ...body, userId: req.session.userId });
+        res.json(newProperties);
     } catch (err) {
         console.log("FAILED! PLEASE TRY AGAIN", err);
         res.status(500).json(err);

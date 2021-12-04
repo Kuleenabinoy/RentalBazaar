@@ -5,16 +5,18 @@ const withAuth = require("../../utils/auth");
 router.post("/", withAuth, async (req, res) => {
     const body = req.body;
     try {
-        const newItem = await Misc.create({ ...body, userId: req.session.userId });
-        res.json(newItem);
+        const newMisc = await Misc.create({ ...body, userId: req.session.userId });
+        res.json(newMisc);
     } catch (err) {
-        console.log("IT FAILED!", err);
+        console.log("FAILED! PLEASE TRY AGAIN", err);
         res.status(500).json(err);
     }
 });
 router.delete("/:id", withAuth, async (req, res) => {
     try {
+
         const [affectedRows] = Misc.destroy({
+
             where: {
                 id: req.params.id,
             },
@@ -31,3 +33,4 @@ router.delete("/:id", withAuth, async (req, res) => {
 });
 
 module.exports = router;
+

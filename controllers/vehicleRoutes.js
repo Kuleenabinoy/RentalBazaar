@@ -4,7 +4,7 @@ const { Vehicle, User } = require("../models");
 const withAuth = require("../utils/auth");
 
 // GET all
-router.get("/", withAuth, async (req, res) => {
+router.get("/vehicle", withAuth, async (req, res) => {
     try {
         const vehicleData = await Vehicle.findAll({
             include: [
@@ -17,7 +17,7 @@ router.get("/", withAuth, async (req, res) => {
 
         const vehicles = vehicleData.map((vehicle) => vehicle.get({ plain: true }));
 
-        res.render("vehiclepage", {
+        res.render("homepage", {
             vehicles,
             logged_in: req.session.logged_in,
         });
@@ -28,7 +28,7 @@ router.get("/", withAuth, async (req, res) => {
 });
 
 // Use the custom middleware before allowing the user to access the vehicle
-router.get("/:id", withAuth, async (req, res) => {
+router.get("/vehicle/:id", withAuth, async (req, res) => {
     try {
         const vehicleData = await Vehicle.findByPk(req.params.id, {
             include: [
@@ -40,7 +40,7 @@ router.get("/:id", withAuth, async (req, res) => {
         });
 
         const vehicles = vehicleData.get({ plain: true });
-        res.render("vehicle-singleitem", { vehicles, logged_in: req.session.logged_in });
+        res.render("vehicledata", { vehicles, logged_in: req.session.logged_in });
     } catch (err) {
         console.log(err);
         res.status(500).json(err);

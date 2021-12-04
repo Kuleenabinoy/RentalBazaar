@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RentalBazaar</title>
-  <link rel="stylesheet" href="C:\Users\nelso\Documents\Bootcamp Projects\Week 15\Unit-15-Group-Project-2\public\css\style.css" />
+  <link rel="stylesheet" href="../../public/css/style.css" />
 </head>
 
 <body>
@@ -26,8 +26,23 @@
         <div>
             <input type="text" placeholder="Search..">
         </div>
+    </section>
+    <section>
+        <ul class="nav-menu">
+            <li class="nav-li"><a href="">Mobile Phones</a></li>
+            <li class="nav-li"><a href="">Computers</a></li>
+            <li class="nav-li"><a href="">Entertainment</a></li>
+            <li class="nav-li"><a href="">Home & Garden</a></li>
+            <li class="nav-li"><a href="">Kitchen & Laundry</a></li>
+            <li class="nav-li"><a href="">Vehichles</a></li>
+            <li class="nav-li"><a href="">Real Estate</a></li>
+            <li class="nav-li"><a href="">Furniture</a></li>
+            <li class="nav-li"><a href="">Leisure</a></li>
+        </ul>
+    </section>
   </header>
   <main>
+
     <section class="carouselSection">
         <!-- Carousel -->
         <div class="productCarousel">
@@ -44,8 +59,8 @@
                 <img src="https://i.pinimg.com/736x/fa/3e/35/fa3e3521f5c4f4f6dead30dfe24966ae.jpg">
             </div>
 
-            <a class="leftSliderButton" onclick="sliderScrollLeft()"><</a>
-            <a class="rightSliderButton" onclick="sliderScrollRight()">></a>
+            <button class="leftSliderButton" onclick="sliderScrollLeft()" aria-label="previous slide"><</button>
+            <button class="rightSliderButton"  aria-label="next slide" onclick="sliderScrollRight()">></button>
         </div>
     </section>
 
@@ -303,7 +318,7 @@
     
   </footer>
   
-  <script src="/Unit-15-Group-Project-2/public/js/homepage.js"></script>
+  <script src="../../public/js/homepage.js"></script>
   <script src="/js/logout.js"></script>
   
 </body>

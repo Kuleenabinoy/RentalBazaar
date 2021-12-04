@@ -1,10 +1,10 @@
 const router = require("express").Router();
-const { Furniture, User, Misc } = require("../models");
+const { Misc, User } = require("../models");
 // Import the custom middleware
 const withAuth = require("../utils/auth");
 
 // GET all
-router.get("/", withAuth, async (req, res) => {
+router.get("/misc", withAuth, async (req, res) => {
     try {
         const miscData = await Misc.findAll({
             include: [
@@ -15,10 +15,10 @@ router.get("/", withAuth, async (req, res) => {
             ],
         });
 
-        const miscellaneous = miscData.map((miscs) => miscs.get({ plain: true }));
+        const misc = miscData.map((misc) => misc.get({ plain: true }));
 
-        res.render("productspage", {
-            miscellaneous,
+        res.render("miscspage", {
+            misc,
             logged_in: req.session.logged_in,
         });
     } catch (err) {
@@ -27,8 +27,8 @@ router.get("/", withAuth, async (req, res) => {
     }
 });
 
-// Use the custom middleware before allowing the user to access the furniture
-router.get("/:id", withAuth, async (req, res) => {
+// Use the custom middleware before allowing the user to access the misc
+router.get("/misc/:id", withAuth, async (req, res) => {
     try {
         const miscData = await Misc.findByPk(req.params.id, {
             include: [
@@ -39,8 +39,8 @@ router.get("/:id", withAuth, async (req, res) => {
             ],
         });
 
-        const miscellaneous = miscData.get({ plain: true });
-        res.render("miscellaneous-singleitem", { miscellaneous, logged_in: req.session.logged_in });
+        const misc = miscData.get({ plain: true });
+        res.render("misc-singleitem", { misc, logged_in: req.session.logged_in });
     } catch (err) {
         console.log(err);
         res.status(500).json(err);

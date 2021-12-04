@@ -9,6 +9,7 @@ router.post("/", withAuth, async (req, res) => {
         res.json(newItem);
     } catch (err) {
         console.log("IT FAILED!", err);
+
         res.status(500).json(err);
     }
 });
@@ -31,3 +32,4 @@ router.delete("/:id", withAuth, async (req, res) => {
 });
 
 module.exports = router;
+
