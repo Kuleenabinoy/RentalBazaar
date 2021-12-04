@@ -1,7 +1,7 @@
 const router = require("express").Router();
-
 const { Furniture } = require("../../models");
 const withAuth = require("../../utils/auth");
+
 router.post("/", withAuth, async (req, res) => {
     const body = req.body;
     try {
@@ -16,9 +16,11 @@ router.post("/", withAuth, async (req, res) => {
         res.status(500).json(err);
     }
 });
+
 router.delete("/:id", withAuth, async (req, res) => {
     try {
-        const [affectedRows] = Vehicle.destroy({
+        const [affectedRows] = Furniture.destroy({
+
             where: {
                 id: req.params.id,
             },

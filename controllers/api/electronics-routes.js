@@ -8,7 +8,8 @@ router.post("/", withAuth, async (req, res) => {
         const newItem = await Electronics.create({ ...body, userId: req.session.userId });
         res.json(newItem);
     } catch (err) {
-        console.log("FAILED! PLEASE TRY AGAIN", err);
+        console.log("IT FAILED!", err);
+
         res.status(500).json(err);
     }
 });
@@ -31,3 +32,4 @@ router.delete("/:id", withAuth, async (req, res) => {
 });
 
 module.exports = router;
+
