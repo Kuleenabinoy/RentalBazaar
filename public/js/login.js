@@ -11,16 +11,14 @@ const loginFormHandler = async (event) => {
       headers: { "Content-Type": "application/json" },
     });
 
-    if (response.ok) {
-
-  console.log('Reposne: ', response);
-    if (response.ok) {
-      document.location.replace("/s");
+    if (response.ok && isadmin === true) {
+      document.location.replace("/admindashboard");
     } else if (response.ok) {
-
-      document.location.replace("/");
+      document.location.replace("/home");
     } else {
-      alert("Failed to log in.");
+      alert(
+        "Failed to log in. Please check your username and password and try again"
+      );
     }
   }
 };
