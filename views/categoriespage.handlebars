@@ -1,0 +1,18 @@
+<div class="card">
+    <img class="card-img-top" src="#" alt="productImage" />
+    <div class="card-body">
+        <p></p>
+    </div>
+</div>
+{{#each categories as |category|}}
+
+    <section class="card">
+        <!-- The contents of this card links to the Category-->
+        <a href="/categories/{{id}}">
+
+            <header>{{categories.name}}</header>
+
+            <img src="#" alt="categoriesimage" />
+        </a>
+    </section>
+{{/each}}

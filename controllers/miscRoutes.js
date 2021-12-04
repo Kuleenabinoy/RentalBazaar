@@ -4,11 +4,7 @@ const { Misc, User } = require("../models");
 const withAuth = require("../utils/auth");
 
 // GET all
-
 router.get("/misc", withAuth, async (req, res) => {
-
-router.get("/", withAuth, async (req, res) => {
-
     try {
         const miscData = await Misc.findAll({
             include: [
@@ -21,11 +17,7 @@ router.get("/", withAuth, async (req, res) => {
 
         const misc = miscData.map((misc) => misc.get({ plain: true }));
 
-
         res.render("miscspage", {
-
-        res.render("productpage", {
-
             misc,
             logged_in: req.session.logged_in,
         });
@@ -54,7 +46,5 @@ router.get("/misc/:id", withAuth, async (req, res) => {
         res.status(500).json(err);
     }
 });
-
-module.exports = router;
 
 module.exports = router;
