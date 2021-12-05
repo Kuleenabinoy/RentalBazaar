@@ -389,7 +389,8 @@ nav a {
   font-style: bold;
 }
 
-.card-img {
+.card-img img {
+  max-width: 241px
 }
 
 .card-content {
