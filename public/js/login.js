@@ -13,8 +13,10 @@ const loginFormHandler = async (event) => {
 
     if (response.ok && isadmin === true) {
       document.location.replace("/admin-dashboard");
+      
     } else if (response.ok) {
       document.location.replace("/home");
+      
     } else {
       alert(
         "Failed to log in. Please check your username and password and try again"

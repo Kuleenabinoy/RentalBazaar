@@ -12,6 +12,4 @@ router.use("/categories", categoriesRoutes);
 router.use("/property", propertyRoutes);
 router.use("/misc", miscRoutes);
 
-router.use("/admin-dashboard", adminRoutes);
-
 module.exports = router;
