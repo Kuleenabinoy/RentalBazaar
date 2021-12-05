@@ -1,6 +1,7 @@
 const { Vehicle } = require("../models");
 const vehicleData = [
     {
+        id: 1,
         model: "Volkswagen CC",
         color: "Grey",
         year: 2012,
@@ -20,7 +21,7 @@ const vehicleData = [
         license_plate: "EY21 P",
         registration_expiration: "2022-09-01",
         insurance_expiration: "2021-10-12",
-        image_url: "",
+        image_url: "https://bit.ly/3Gd7YOP",
         price: 500,
         available: "true",
         user_id: 3,

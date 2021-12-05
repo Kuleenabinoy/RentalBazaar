@@ -51,10 +51,38 @@ h3 {
   /* -webkit-text-stroke: 1px black; */
 }
 
+h4, label, button {
+  font-size: 2rem;
+  /* color: white;
+  -webkit-text-stroke: 1px black; */
+}
+
 li {
   list-style: none;
   margin-bottom: 1rem;
   color: white;
+}
+
+hr {
+  display: flex;
+  padding: 0 15%;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+button:active {
+  padding: .5rem;
+  border-radius: .5rem;
+  border: 2px solid #a1ff0a;
+  box-shadow:     
+  /* Green glow */
+  0 0 10px #a1ff0a,
+  0 0 21px #a1ff0a;;
 }
 
 /******** NAVBAR ********/
@@ -94,6 +122,14 @@ nav a {
   align-content: center;
 }
 
+.navTitle h1:hover {
+  color: #a1ff0a;
+  text-shadow:
+    /* Green glow */
+    0 0 10px #a1ff0a,
+    0 0 21px #a1ff0a;
+}
+
 .navbar .navSearch {
   justify-content: center;
   align-content: center;
@@ -104,13 +140,24 @@ nav a {
   height: 3.5rem;
   width: 100%;
   font-size: 2.5rem;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 2px 23px 2px 30px;
+  outline: 0;
+  background-color: #f5f5f5;
+}
+
+.navSearch div input:hover {
+  border-color: solid 2px #a1ff0a;
+  background-color: white;
 }
 
 /******** NAV MENU ********/
 .nav-menu {
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   padding: 5px 25% 10px 25%;
-  display: table flex;
+  display: flex;
   width: 100%;
   align-self: center;
 }
@@ -124,7 +171,7 @@ nav a {
 
 .nav-menu li a {
   color: white;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 /******** CAROUSEL ********/
@@ -255,6 +302,50 @@ nav a {
   left: 30%;
 }
 
+.about-banner:hover {
+  border: solid 2px #a1ff0a;
+  border-radius: 2.5rem;
+  box-shadow:
+    /* Green glow */
+    0 0 10px #a1ff0a,
+    0 0 21px #a1ff0a;
+}
+
+/******** LOGIN/SIGNUP SECTION ********/
+.loginSignupSection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 25px 15%;
+  justify-content: space-evenly;
+}
+
+.login-card {
+  display: flex table;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 60px;
+  margin: 40px;
+  background: linear-gradient(0deg, rgba(27,30,35,1) 
+  0%, rgba(34,37,42,1) 100%);
+  color: white;
+  border: solid 2px #26292e;
+  border-radius: 2.5rem;
+}
+
+.login-card div {
+  padding: 5px;
+}
+
+.login-card:hover {
+  border: solid 2px #a1ff0a;
+  border-radius: 2.5rem;
+  box-shadow:
+    /* Green glow */
+    0 0 10px #a1ff0a,
+    0 0 21px #a1ff0a;
+}
+
 /******** PRODUCT CARDS ********/
 .product-card-row {
   display: flex;
@@ -265,12 +356,24 @@ nav a {
 }
 
 .card-container {
-  width: 25%;
   max-width: 285px;
+  min-width: 241px;
   position: relative;
-  background-color: white;
+  background: linear-gradient(0deg, rgba(27,30,35,1) 
+  0%, rgba(34,37,42,1) 100%);
+  border: solid 2px #26292e;
+  border-radius: 2.5rem;
   padding: 2rem;
   margin-bottom: 2.5rem;
+}
+
+.card-container:hover {
+  border: solid 2px #a1ff0a;
+  border-radius: 2.5rem;
+  box-shadow:
+    /* Green glow */
+    0 0 10px #a1ff0a,
+    0 0 21px #a1ff0a;
 }
 
 .card-ribbon {
@@ -286,8 +389,8 @@ nav a {
   font-style: bold;
 }
 
-.card-img {
-
+.card-img img {
+  max-width: 241px
 }
 
 .card-content {
@@ -300,6 +403,12 @@ nav a {
 }
 
 /******** FOOTER ********/
+footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+
 .footer-section {
   display: flex;
   justify-content: space-evenly;
@@ -321,7 +430,7 @@ nav a {
 
 .footer-cats-title a {
   color: white;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   text-decoration: underline;
   font-style: none;
 }
@@ -332,7 +441,39 @@ nav a {
 
 .footer-cats-subtypes a {
   color: lightgrey;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-style: none;
   text-decoration: none;
+}
+
+/******** HOVER & ACTIVE LI + A EFFECTS ********/
+
+a:hover{
+  color: #a1ff0a;
+  text-shadow:
+  /* Green glow */
+  0 0 10px #a1ff0a;
+}
+
+li a:hover{
+  color: #a1ff0a;
+  text-shadow:
+    /* Green glow */
+    0 0 10px #a1ff0a;
+}
+
+a:active{
+  color: #a1ff0a;
+  text-shadow:
+  /* Green glow */
+  0 0 10px #a1ff0a,
+  0 0 21px #a1ff0a;
+}
+
+li a:active {
+  color: #a1ff0a;
+  text-shadow:
+    /* Green glow */
+    0 0 10px #a1ff0a,
+    0 0 21px #a1ff0a;
 }
