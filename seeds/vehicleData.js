@@ -1,6 +1,7 @@
 const { Vehicle } = require("../models");
 const vehicleData = [
     {
+        id: 1,
         model: "Volkswagen CC",
         color: "Grey",
         year: 2012,
