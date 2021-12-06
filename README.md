@@ -65,7 +65,7 @@ If you have any questions, please reach out to me on [GitHub](https://github.com
 ## User Story
 ```
 AS AN individual
-I WANT to be able to browse appliances, furniture tech devices, apparel, real estate and vehicles
+I WANT to be able to browse Vehicles and Real Estate
 SO THAT I utilise things for a limited period of time that I may not necessarily need to purchase
   
 AS A user
