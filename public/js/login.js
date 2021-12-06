@@ -10,13 +10,12 @@ const loginFormHandler = async (event) => {
       body: JSON.stringify({ email, password }),
       headers: { "Content-Type": "application/json" },
     });
+    console.log('response:', response)
 
-    if (response.ok && isadmin === true) {
-      document.location.replace("/admin-dashboard");
-      
+    if (response.ok) {
+      document.location.replace("/");
     } else if (response.ok) {
-      document.location.replace("/home");
-      
+      document.location.replace("/");  
     } else {
       alert(
         "Failed to log in. Please check your username and password and try again"
