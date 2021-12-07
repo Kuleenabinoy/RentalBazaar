@@ -6,8 +6,8 @@ const miscRoutes = require("./misc-routes");
 const propertyRoutes = require("./properties-routes");
 const vehicleRoutes = require("./vehicle-routes");
 
-router.use("/users", userRoutes);
-router.use("/vehicle", vehicleRoutes);
+router.use("/user", userRoutes);
+router.use("/vehicles", vehicleRoutes);
 router.use("/categories", categoriesRoutes);
 router.use("/property", propertyRoutes);
 router.use("/misc", miscRoutes);
