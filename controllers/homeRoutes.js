@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { User, Vehicle, Property } = require("../models");
+const { User, Vehicle, Property, Furniture, Electronics, Misc } = require("../models");
 const withAuth = require("../utils/auth");
 
 // Prevent non logged in users from viewing the homepage
@@ -100,6 +100,73 @@ router.get("/property", withAuth, async (req, res) => {
 
         res.render("propertypage", {
             properties,
+            logged_in: req.session.logged_in,
+        });
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+
+router.get("/misc", withAuth, async (req, res) => {
+    try {
+        const miscData = await Misc.findAll({
+            include: [
+                {
+                    model: User,
+                    attributes: ["username", "email"],
+                },
+            ],
+        });
+
+        const misc = miscData.map((misc) => misc.get({ plain: true }));
+
+        res.render("miscspage", {
+            misc,
+            logged_in: req.session.logged_in,
+        });
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+router.get("/furniture", withAuth, async (req, res) => {
+    try {
+        const furnitureData = await Furniture.findAll({
+            include: [
+                {
+                    model: User,
+                    attributes: ["username", "email"],
+                },
+            ],
+        });
+
+        const furnitures = furnitureData.map((furnitures) => furnitures.get({ plain: true }));
+
+        res.render("furniturepage", {
+            furnitures,
+            logged_in: req.session.logged_in,
+        });
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+router.get("/electronics", withAuth, async (req, res) => {
+    try {
+        const electronicsData = await Electronics.findAll({
+            include: [
+                {
+                    model: User,
+                    attributes: ["username", "email"],
+                },
+            ],
+        });
+
+        const electronics = electronicsData.map((electronics) => electronics.get({ plain: true }));
+
+        res.render("electronicspage", {
+            electronics,
             logged_in: req.session.logged_in,
         });
     } catch (err) {

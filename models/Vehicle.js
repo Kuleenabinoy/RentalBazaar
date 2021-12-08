@@ -37,7 +37,7 @@ Vehicle.init(
         },
         image_url: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         price: {
             type: DataTypes.DECIMAL(8, 2),
