@@ -5,6 +5,7 @@ const withAuth = require("../../utils/auth");
 
 router.post("/addvehicle", withAuth, async (req, res) => {
     const body = req.body;
+    console.log(body);
     try {
         const newVehicle = await Vehicle.create({ ...body, userId: req.session.userId });
         res.json(newVehicle);
@@ -14,6 +15,7 @@ router.post("/addvehicle", withAuth, async (req, res) => {
     }
 });
 router.delete("/:id", withAuth, async (req, res) => {
+    console.log(req.params.id);
     try {
         const [affectedRows] = Vehicle.destroy({
             where: {

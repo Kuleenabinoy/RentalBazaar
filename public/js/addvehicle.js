@@ -8,9 +8,10 @@ const VehicleFormHandler = async (event) => {
     const insurance_expiration = document.getElementById("insuranceexpiry").value.trim();
     const image_url = "";
     const price = document.getElementById("price").value.trim();
-    const available = document.getElementById("available").value.trim();
+    const available = document.getElementById("available").checked;
     const user_id = document.getElementById("userid").value.trim();
     const category_id = document.getElementById("categoryid").value.trim();
+    console.log(available);
     if (
         !model ||
         !color ||
@@ -18,50 +19,38 @@ const VehicleFormHandler = async (event) => {
         !license_plate ||
         !registration_expiration ||
         !insurance_expiration ||
-        !image_url ||
         !price ||
-        !available ||
+        //!available ||
         !user_id ||
-        category_id
+        !category_id
     ) {
         alert("all fields are needed");
+        return;
     }
-    if (
-        model &&
-        color &&
-        year &&
-        license_plate &&
-        registration_expiration &&
-        insurance_expiration &&
-        image_url &&
-        price &&
-        available &&
-        user_id &&
-        category_id
-    ) {
-        const response = await fetch(`api/vehicle/addvehicle`, {
-            method: "POST",
-            body: JSON.stringify({
-                model,
-                color,
-                year,
-                license_plate,
-                registration_expiration,
-                insurance_expiration,
-                image_url,
-                price,
-                available,
-                user_id,
-                category_id,
-            }),
-            headers: { "Content-Type": "application/json" },
-        });
 
-        if (response.ok) {
-            document.location.replace("/homepage");
-        } else {
-            alert("Please check all your data is correct");
-        }
+    const response = await fetch(`/api/vehicle/addvehicle`, {
+        method: "POST",
+        body: JSON.stringify({
+            model,
+            color,
+            year,
+            license_plate,
+            registration_expiration,
+            insurance_expiration,
+            image_url,
+            price,
+            available,
+            user_id,
+            category_id,
+        }),
+        headers: { "Content-Type": "application/json" },
+    });
+
+    if (response.ok) {
+        document.location.replace("/homepage");
+    } else {
+        alert("Please check all your data is correct");
     }
 };
-document.getElementById("add").addEventListener("click", VehicleFormHandler);
+
+document.querySelector("#addvehiclebtn").addEventListener("click", VehicleFormHandler);
