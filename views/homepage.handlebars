@@ -1,3 +1,4 @@
+
 {{> navbar }}
 
 {{> productCarousel }}
@@ -7,8 +8,12 @@
     </div>
 
     
-    <section class="product-card-row">
+    <section  class="product-card-row">
+        
+        {{#each properties as |property|}}
         {{> property }}
+        {{/each}}
+
     </section>
 
 {{> aboutcarousel }}
