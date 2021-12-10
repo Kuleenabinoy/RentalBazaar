@@ -3,19 +3,28 @@
 <div id="x">
 <a href ="/addvehicle" id ="addvehicle">Add Vehicle</a>
 
+<<<<<<< HEAD
 <div class="product-card-row">
         <h2>Misc Rentals</h2>
+=======
+  {{#each vehicles as |vehicle|}}
+  {{> vehicle }}
+  {{/each}}
+>>>>>>> 7f826ab2c5bc0e219275e55064a5657e7d542420
     </div>
 
-    
-    <section id="x" class="product-card-row">
+    <div class="product-card-row">
+            <h2>Misc Rentals</h2>
+        </div>
 
-      <div id="x">
-        {{#each vehicles as |vehicle|}}
-        {{> vehicle }}
-        {{/each}}
-      </div>
+        <section id="x" class="product-card-row">
 
-    </section>
+          <div id="x">
+            {{#each vehicles as |vehicle|}}
+            {{> vehicle }}
+            {{/each}}
+          </div>
+
+        </section>
 
 {{> footer}}

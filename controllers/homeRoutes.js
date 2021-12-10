@@ -175,4 +175,12 @@ router.get("/electronics", withAuth, async (req, res) => {
     }
 });
 
+router.get("/addvehicle", withAuth, async (req, res) => {
+    try {
+        res.render("addvehicle", { logged_in: true });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 module.exports = router;
