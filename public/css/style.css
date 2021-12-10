@@ -485,11 +485,24 @@ li a:active {
     /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
-@media only screen and (min width: 502) {
+/* MAX WIDTH CSS */
+@media only screen and (max-width: 502) {
     .navbar a {
         font-size: 1.5rem;       
     }
     .nav-menu li a {
         font-size: 1.5rem;
     }   
+    .footer-section {
+        display: flex table;
+    }
+    .footer-cats-title a {
+        font-size: 1.5rem;
+    }
+    .about-banner{
+        display: flex table;
+    }
+    .hide {
+        /* display: none; */
+    }
 }
