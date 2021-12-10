@@ -1,5 +1,17 @@
-<div id="x">
-  {{#each misc as |misci|}}
-  {{> misci }}
-  {{/each}}
-</div>
+{{> navbar}}
+
+<div class="product-card-row">
+        <h2>Misc Rentals</h2>
+    </div>
+
+    
+    <section id="x" class="product-card-row">
+
+      <div id="x">
+        {{#each misc as |misci|}}
+        {{> misci }}
+        {{/each}}
+      </div>
+
+    </section>
+{{> footer}}
