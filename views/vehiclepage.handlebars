@@ -1,18 +1,25 @@
 {{> navbar}}
 
-<div class="product-card-row">
-        <h2>Misc Rentals</h2>
+<div id="x">
+<a href ="/addvehicle" id ="addvehicle">Add Vehicle</a>
+
+  {{#each vehicles as |vehicle|}}
+  {{> vehicle }}
+  {{/each}}
     </div>
 
-    
-    <section id="x" class="product-card-row">
+    <div class="product-card-row">
+            <h2>Misc Rentals</h2>
+        </div>
 
-      <div id="x">
-        {{#each vehicles as |vehicle|}}
-        {{> vehicle }}
-        {{/each}}
-      </div>
+        <section id="x" class="product-card-row">
 
-    </section>
+          <div id="x">
+            {{#each vehicles as |vehicle|}}
+            {{> vehicle }}
+            {{/each}}
+          </div>
+
+        </section>
 
 {{> footer}}
