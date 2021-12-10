@@ -17,7 +17,7 @@ View the Heroku deployed application here: <placeholder>
 ## Screenshot
 
 <p align="center">
-  `<img src="https://github.com/8nd8/RentalBazaar/blob/main/public/images/Homepage%20screenshot.JPG" alt="homepage pic" />`
+  `<img src="https://github.com/8nd8/RentalBazaar/blob/main/public/images/Homepage%20screenshot%20-%202.JPG" alt="homepage pic" />`
 </p>
 
 
