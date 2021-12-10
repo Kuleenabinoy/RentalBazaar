@@ -120,6 +120,10 @@ nav a {
     align-content: center;
 }
 
+.navTitle h1 {
+    text-decoration: none;
+}
+
 .navTitle h1:hover {
     color: #a1ff0a;
     text-shadow:
@@ -148,7 +152,7 @@ nav a {
     background-color: white;
 }
 
-/******** NAV MENU ********/
+/******** NAV CATEGORY MENU ********/
 .nav-menu {
     justify-content: center;
     align-items: center;
