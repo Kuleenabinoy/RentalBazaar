@@ -8,16 +8,16 @@ Contributors:
 [Robert Calder](https://github.com./RobertCalder1)
 
 ## Description
-Develop an E-commerce platform where users can access and rent vehicles and real estate at any moment. This website lets users browse & choose their choice of vehicle and/or real estate.
+Develop an E-commerce platform where users can access and rent vehicles, real estate and various other rentals at any moment. This website lets users browse & choose their though a range of items available by category.
 
 Technologies used: Handlebars, JavaScript, MYSQL2, Shell, HTML, CSS
 
-View the deployed application here: <placeholder>
+View the Heroku deployed application here: <placeholder>
 
-## GIF Demo
+## Screenshot
 
 <p align="center">
-  `<img src=" < URL LINK TO GO HERE> " alt="animated" />`
+  `<img src="https://github.com/8nd8/RentalBazaar/blob/main/public/images/Homepage%20screenshot.JPG" alt="homepage pic" />`
 </p>
 
 
