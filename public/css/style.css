@@ -5,6 +5,10 @@
     /* border: 1px grey solid; */
 }
 
+:root {
+    --highlight: rgb(255, 0, 0);
+}
+
 html {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-size: 62.5%;
@@ -30,6 +34,7 @@ p {
 
 a {
     font-size: 2.5rem;
+    text-decoration: none;
 }
 
 h1 {
@@ -80,9 +85,9 @@ button {
 button:active {
     padding: 0.5rem;
     border-radius: 0.5rem;
-    border: 2px solid #a1ff0a;
+    border: 2px solid #ff6d1f;
     box-shadow:     
-  /* Green glow */ 0 0 10px #a1ff0a, 0 0 21px #a1ff0a;
+  /* Green glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 /******** NAVBAR ********/
@@ -120,14 +125,11 @@ nav a {
     align-content: center;
 }
 
-.navTitle h1 {
-    text-decoration: none;
-}
 
 .navTitle h1:hover {
-    color: #a1ff0a;
+    color: #ff6d1f;
     text-shadow:
-    /* Green glow */ 0 0 10px #a1ff0a, 0 0 21px #a1ff0a;
+    /* Green glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 .navbar .navSearch {
@@ -148,7 +150,7 @@ nav a {
 }
 
 .navSearch div input:hover {
-    border-color: solid 2px #a1ff0a;
+    border-color: solid 2px #ff6d1f;
     background-color: white;
 }
 
@@ -172,6 +174,7 @@ nav a {
 .nav-menu li a {
     color: white;
     font-size: 2rem;
+    text-decoration: underline;
 }
 
 /******** CAROUSEL ********/
@@ -300,10 +303,10 @@ nav a {
 }
 
 .about-banner:hover {
-    border: solid 2px #a1ff0a;
+    border: solid 2px #ff6d1f;
     border-radius: 2.5rem;
     box-shadow:
-    /* Green glow */ 0 0 10px #a1ff0a, 0 0 21px #a1ff0a;
+    /* Green glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 /******** LOGIN/SIGNUP SECTION ********/
@@ -332,10 +335,10 @@ nav a {
 }
 
 .login-card:hover {
-    border: solid 2px #a1ff0a;
+    border: solid 2px #ff6d1f;
     border-radius: 2.5rem;
     box-shadow:
-    /* Green glow */ 0 0 10px #a1ff0a, 0 0 21px #a1ff0a;
+    /* Green glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 /******** ADD VEHICLE FORM PAGE ********/
@@ -381,10 +384,10 @@ nav a {
 }
 
 .card-container:hover {
-    border: solid 2px #a1ff0a;
+    border: solid 2px #ff6d1f;
     border-radius: 2.5rem;
     box-shadow:
-    /* Green glow */ 0 0 10px #a1ff0a, 0 0 21px #a1ff0a;
+    /* Green glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 .card-ribbon {
@@ -392,7 +395,7 @@ nav a {
     top: 0;
     left: 0;
     z-index: 2;
-    background: #a1ff0a;
+    background: #ff6d1f;
     padding: 2.5px;
 }
 
@@ -460,26 +463,26 @@ footer {
 /******** HOVER & ACTIVE LI + A EFFECTS ********/
 
 a:hover {
-    color: #a1ff0a;
+    color: #ff6d1f;
     text-shadow:
-  /* Green glow */ 0 0 10px #a1ff0a;
+  /* Green glow */ 0 0 10px #ff6d1f;
 }
 
 li a:hover {
-    color: #a1ff0a;
+    color: #ff6d1f;
     text-shadow:
-    /* Green glow */ 0 0 10px #a1ff0a;
+    /* Green glow */ 0 0 10px #ff6d1f;
 }
 
 a:active {
-    color: #a1ff0a;
+    color: #ff6d1f;
     text-shadow:
-  /* Green glow */ 0 0 10px #a1ff0a, 0 0 21px #a1ff0a;
+  /* Green glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 li a:active {
-    color: #a1ff0a;
+    color: #ff6d1f;
     text-shadow:
-    /* Green glow */ 0 0 10px #a1ff0a, 0 0 21px #a1ff0a;
+    /* Green glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
