@@ -125,7 +125,6 @@ nav a {
     align-content: center;
 }
 
-
 .navTitle h1:hover {
     color: #ff6d1f;
     text-shadow:
@@ -486,3 +485,11 @@ li a:active {
     /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
+@media only screen and (min width: 502) {
+    .navbar a {
+        font-size: 1.5rem;       
+    }
+    .nav-menu li a {
+        font-size: 1.5rem;
+    }   
+}
