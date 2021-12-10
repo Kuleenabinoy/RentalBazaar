@@ -87,7 +87,7 @@ button:active {
     border-radius: 0.5rem;
     border: 2px solid #ff6d1f;
     box-shadow:     
-  /* Green glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
+  /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 /******** NAVBAR ********/
@@ -129,7 +129,7 @@ nav a {
 .navTitle h1:hover {
     color: #ff6d1f;
     text-shadow:
-    /* Green glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
+    /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 .navbar .navSearch {
@@ -306,7 +306,7 @@ nav a {
     border: solid 2px #ff6d1f;
     border-radius: 2.5rem;
     box-shadow:
-    /* Green glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
+    /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 /******** LOGIN/SIGNUP SECTION ********/
@@ -338,7 +338,7 @@ nav a {
     border: solid 2px #ff6d1f;
     border-radius: 2.5rem;
     box-shadow:
-    /* Green glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
+    /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 /******** ADD VEHICLE FORM PAGE ********/
@@ -387,7 +387,7 @@ nav a {
     border: solid 2px #ff6d1f;
     border-radius: 2.5rem;
     box-shadow:
-    /* Green glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
+    /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 .card-ribbon {
@@ -465,24 +465,24 @@ footer {
 a:hover {
     color: #ff6d1f;
     text-shadow:
-  /* Green glow */ 0 0 10px #ff6d1f;
+  /* Orange glow */ 0 0 10px #ff6d1f;
 }
 
 li a:hover {
     color: #ff6d1f;
     text-shadow:
-    /* Green glow */ 0 0 10px #ff6d1f;
+    /* Orange glow */ 0 0 10px #ff6d1f;
 }
 
 a:active {
     color: #ff6d1f;
     text-shadow:
-  /* Green glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
+  /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 li a:active {
     color: #ff6d1f;
     text-shadow:
-    /* Green glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
+    /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
