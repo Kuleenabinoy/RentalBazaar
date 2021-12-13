@@ -80,7 +80,7 @@ Currently there are no tests.
 
 ## Questions
 
-If you have any questions, please reach out to me on [email](mailto:annachandy123@gmail.com).
+If you have any questions, please reach out to Kuleena @ annachandy123@gmail.com.
 
 ## User Story
 
