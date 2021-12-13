@@ -19,7 +19,8 @@ View the Heroku deployed application here: <placeholder>
 <p align="center">
   `<img src="https://github.com/8nd8/RentalBazaar/blob/main/public/images/Homepage%20screenshot%20-%202.JPG" alt="homepage pic" />`
 </p>
-![Screenshot 2021-12-13 22 18 45](https://user-images.githubusercontent.com/86656634/145807000-5f77e4c6-4866-4d6e-8e0a-a4f5d0f9bc49.png)
+![Screenshot 2021-12-13 22 18 45](https://user-images.githubusercontent.com/86656634/145807276-3b2ffb02-9d6f-4f09-8d0a-c5a8e6b6d7e6.png)
+
 
 ![Screenshot 2021-12-13 22 19 05](https://user-images.githubusercontent.com/86656634/145807018-b493129a-6d12-414f-a2a3-776e15f3e54b.png)
 
