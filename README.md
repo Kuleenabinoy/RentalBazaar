@@ -20,6 +20,8 @@ View the Heroku deployed application here: <placeholder>
   `<img src="https://github.com/8nd8/RentalBazaar/blob/main/public/images/Homepage%20screenshot%20-%202.JPG" alt="homepage pic" />`
 </p>
 
+![Screenshot 2021-12-13 22 18 45](https://user-images.githubusercontent.com/86656634/145803634-2235aa16-3e4d-4b98-acc3-910d789879c3.png)
+![Screenshot 2021-12-13 22 19 05](https://user-images.githubusercontent.com/86656634/145803658-f3dc3b38-9edf-4c23-afaa-9596ed8fd336.png)
 
 ## Table of Contents:
 1. [Installation](#installation)
