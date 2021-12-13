@@ -5,6 +5,10 @@
     /* border: 1px grey solid; */
 }
 
+:root {
+    --highlight: rgb(255, 0, 0);
+}
+
 html {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-size: 62.5%;
@@ -30,6 +34,7 @@ p {
 
 a {
     font-size: 2.5rem;
+    text-decoration: none;
 }
 
 h1 {
@@ -80,9 +85,9 @@ button {
 button:active {
     padding: 0.5rem;
     border-radius: 0.5rem;
-    border: 2px solid #a1ff0a;
+    border: 2px solid #ff6d1f;
     box-shadow:     
-  /* Green glow */ 0 0 10px #a1ff0a, 0 0 21px #a1ff0a;
+  /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 /******** NAVBAR ********/
@@ -121,9 +126,9 @@ nav a {
 }
 
 .navTitle h1:hover {
-    color: #a1ff0a;
+    color: #ff6d1f;
     text-shadow:
-    /* Green glow */ 0 0 10px #a1ff0a, 0 0 21px #a1ff0a;
+    /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 .navbar .navSearch {
@@ -144,11 +149,11 @@ nav a {
 }
 
 .navSearch div input:hover {
-    border-color: solid 2px #a1ff0a;
+    border-color: solid 2px #ff6d1f;
     background-color: white;
 }
 
-/******** NAV MENU ********/
+/******** NAV CATEGORY MENU ********/
 .nav-menu {
     justify-content: center;
     align-items: center;
@@ -168,6 +173,7 @@ nav a {
 .nav-menu li a {
     color: white;
     font-size: 2rem;
+    text-decoration: underline;
 }
 
 /******** CAROUSEL ********/
@@ -296,10 +302,10 @@ nav a {
 }
 
 .about-banner:hover {
-    border: solid 2px #a1ff0a;
+    border: solid 2px #ff6d1f;
     border-radius: 2.5rem;
     box-shadow:
-    /* Green glow */ 0 0 10px #a1ff0a, 0 0 21px #a1ff0a;
+    /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 /******** LOGIN/SIGNUP SECTION ********/
@@ -328,10 +334,32 @@ nav a {
 }
 
 .login-card:hover {
-    border: solid 2px #a1ff0a;
+    border: solid 2px #ff6d1f;
     border-radius: 2.5rem;
     box-shadow:
-    /* Green glow */ 0 0 10px #a1ff0a, 0 0 21px #a1ff0a;
+    /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
+}
+
+/******** ADD VEHICLE FORM PAGE ********/
+#addvehicle-form {
+    display: flex table;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+    padding: 60px;
+    margin: 40px;
+    background: linear-gradient(0deg, rgba(27, 30, 35, 1) 0%, rgba(34, 37, 42, 1) 100%);
+    color: white;
+    border: solid 2px #26292e;
+    border-radius: 2.5rem;
+}
+
+#addvehicle-form label {
+    margin: 2rem;
+}
+
+#addvehicle-form h2 {
+    margin: 2rem;
 }
 
 /******** PRODUCT CARDS ********/
@@ -355,10 +383,10 @@ nav a {
 }
 
 .card-container:hover {
-    border: solid 2px #a1ff0a;
+    border: solid 2px #ff6d1f;
     border-radius: 2.5rem;
     box-shadow:
-    /* Green glow */ 0 0 10px #a1ff0a, 0 0 21px #a1ff0a;
+    /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 .card-ribbon {
@@ -366,7 +394,7 @@ nav a {
     top: 0;
     left: 0;
     z-index: 2;
-    background: #a1ff0a;
+    background: #ff6d1f;
     padding: 2.5px;
 }
 
@@ -434,28 +462,47 @@ footer {
 /******** HOVER & ACTIVE LI + A EFFECTS ********/
 
 a:hover {
-    color: #a1ff0a;
+    color: #ff6d1f;
     text-shadow:
-  /* Green glow */ 0 0 10px #a1ff0a;
+  /* Orange glow */ 0 0 10px #ff6d1f;
 }
 
 li a:hover {
-    color: #a1ff0a;
+    color: #ff6d1f;
     text-shadow:
-    /* Green glow */ 0 0 10px #a1ff0a;
+    /* Orange glow */ 0 0 10px #ff6d1f;
 }
 
 a:active {
-    color: #a1ff0a;
+    color: #ff6d1f;
     text-shadow:
-  /* Green glow */ 0 0 10px #a1ff0a, 0 0 21px #a1ff0a;
+  /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
 
 li a:active {
-    color: #a1ff0a;
+    color: #ff6d1f;
     text-shadow:
-    /* Green glow */ 0 0 10px #a1ff0a, 0 0 21px #a1ff0a;
+    /* Orange glow */ 0 0 10px #ff6d1f, 0 0 21px #ff6d1f;
 }
-#addvehicle-form {
-    background-color: azure;
+
+/* MAX WIDTH CSS */
+@media only screen and (max-width: 502) {
+    .navbar a {
+        font-size: 1.5rem;       
+    }
+    .nav-menu li a {
+        font-size: 1.5rem;
+    }   
+    .footer-section {
+        display: flex table;
+    }
+    .footer-cats-title a {
+        font-size: 1.5rem;
+    }
+    .about-banner{
+        display: flex table;
+    }
+    .hide {
+        /* display: none; */
+    }
 }

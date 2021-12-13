@@ -10,17 +10,19 @@ Contributors:
 
 ## Description
 
-Develop an E-commerce platform where users can access and rent vehicles and real estate at any moment. This website lets users browse & choose their choice of vehicle and/or real estate.
+Develop an E-commerce platform where users can access and rent vehicles, real estate and various other rentals at any moment. This website lets users browse & choose their though a range of items available by category.
 
 Technologies used: Handlebars, JavaScript, MYSQL2, Shell, HTML, CSS
 
-View the deployed application here: <placeholder>
+View the Heroku deployed application here: https://rental-bazaar.herokuapp.com/
 
-## GIF Demo
+## Screenshot
 
 <p align="center">
-  `<img src=" < URL LINK TO GO HERE> " alt="animated" />`
+  `<img src="https://github.com/8nd8/RentalBazaar/blob/main/public/images/Homepage%20screenshot%20-%202.JPG" alt="homepage pic" />`
 </p>
+
+![Screenshot 2021-12-13 22 19 05](https://user-images.githubusercontent.com/86656634/145807018-b493129a-6d12-414f-a2a3-776e15f3e54b.png)
 
 ## Table of Contents:
 
@@ -115,3 +117,7 @@ Be interactive (i.e., accept and respond to user input).
 Meet good-quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
 Have a professional README (with unique name, description, technologies used, screenshot, and link to deployed application).
 ```
+
+## Links
+
+https://rental-bazaar.herokuapp.com/
