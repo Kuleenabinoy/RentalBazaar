@@ -12,13 +12,17 @@ Develop an E-commerce platform where users can access and rent vehicles, real es
 
 Technologies used: Handlebars, JavaScript, MYSQL2, Shell, HTML, CSS
 
-View the Heroku deployed application here: <placeholder>
+View the Heroku deployed application here: https://rental-bazaar.herokuapp.com/
 
 ## Screenshot
 
 <p align="center">
   `<img src="https://github.com/8nd8/RentalBazaar/blob/main/public/images/Homepage%20screenshot%20-%202.JPG" alt="homepage pic" />`
 </p>
+
+
+
+![Screenshot 2021-12-13 22 19 05](https://user-images.githubusercontent.com/86656634/145807018-b493129a-6d12-414f-a2a3-776e15f3e54b.png)
 
 
 ## Table of Contents:
