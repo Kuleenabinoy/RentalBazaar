@@ -123,5 +123,3 @@ Have a professional README (with unique name, description, technologies used, sc
 Links:
 
 https://rentalbazaar.herokuapp.com/
-
-https://rental-bazaar.herokuapp.com/
