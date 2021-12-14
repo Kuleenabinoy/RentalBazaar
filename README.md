@@ -120,5 +120,8 @@ Have a professional README (with unique name, description, technologies used, sc
 
 ## Links
 
-https://rentalbazaar.herokuapp.com/--my link
-https://rental-bazaar.herokuapp.com/--group link
+Links:
+
+https://rentalbazaar.herokuapp.com/
+
+https://rental-bazaar.herokuapp.com/
